@@ -1,0 +1,63 @@
+.confirm__content {
+    max-width: 1230px;
+    margin: 0 auto;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.confirm__header {
+    margin-bottom: 30px;
+}
+
+.confirm-table {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.confirm-table__inner {
+    width: 100%;
+    border: 1px solid #e0e0e0;
+}
+
+.confirm-table__row {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.confirm-table__row:last-child {
+    border-bottom-width: 0;
+}
+
+.confirm-table__header {
+    width: 20%;
+    background: #f0f0f0;
+    border-right: 1px solid #e0e0e0;
+    padding: 15px;
+}
+
+.confirm-table__item {
+    width: 70%;
+}
+
+.confirm-table__item-input {
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.confirm__button {
+    width: 20%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+.confirm__button-submit {
+    width: 100%;
+    height: 40px;
+    background: #000;
+    border: none;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+}
