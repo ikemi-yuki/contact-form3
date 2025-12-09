@@ -10,15 +10,18 @@
             <h2>お問い合わせ</h2>
         </div>
         <form class="form" action="/contacts/confirm" method="post">
+            @csrf
             <div class="form__group">
                 <div class="form__group-title">
                     <span class="form__label--item">お名前</span>
                     <span class="form__label--required">必須</span>
                 </div>
                 <div class="form__group-content">
-                    <input class="form__input" type="text" name="name" placeholder="テスト太郎">
+                    <input class="form__input" type="text" name="name" placeholder="テスト太郎" value="{{ old('name') }}">
                     <div class="form__error">
-                        バリデーション
+                    @error('name')
+                        {{ $message }}
+                    @enderror
                     </div>
                 </div>
             </div>
@@ -28,9 +31,11 @@
                     <span class="form__label--required">必須</span>
                 </div>
                 <div class="form__group-content">
-                    <input class="form__input" type="mail" name="email" placeholder="test@example.com">
+                    <input class="form__input" type="mail" name="email" placeholder="test@example.com" value="{{ old('email') }}">
                     <div class="form__error">
-                        バリデーション
+                    @error('email')
+                        {{ $message }}
+                    @enderror
                     </div>
                 </div>
             </div>
@@ -40,9 +45,11 @@
                     <span class="form__label--required">必須</span>
                 </div>
                 <div class="form__group-content">
-                    <input class="form__input" type="tel" name="tel" placeholder="09012345678">
+                    <input class="form__input" type="tel" name="tel" placeholder="09012345678" value="{{ old('tel') }}">
                     <div class="form__error">
-                        バリデーション
+                    @error('tel')
+                        {{ $message }}
+                    @enderror
                     </div>
                 </div>
             </div>

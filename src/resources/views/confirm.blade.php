@@ -10,30 +10,31 @@
             <h2>お問い合わせ内容確認</h2>
         </div>
         <form class="confirm__form" action="/contacts" method="post">
+            @csrf
             <div class="confirm-table">
                 <table class="confirm-table__inner">
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">お名前</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="text" name="name" value="" readonly>
+                            <input class="confirm-table__item-input" type="text" name="name" value="{{ $contact['name'] }}" readonly>
                         </td>
                     </tr>
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">メールアドレス</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="mail" name="email" value="" readonly>
+                            <input class="confirm-table__item-input" type="mail" name="email" value="{{ $contact['email'] }}" readonly>
                         </td>
                     </tr>
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">電話番号</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="tel" name="tel" value="" readonly>
+                            <input class="confirm-table__item-input" type="tel" name="tel" value="{{ $contact['tel'] }}" readonly>
                         </td>
                     </tr>
                     <tr class="confirm-table__row">
                         <th class="confirm-table__header">お問い合わせ内容</th>
                         <td class="confirm-table__item">
-                            <input class="confirm-table__item-input" type="text" name="content" value="" readonly>
+                            <input class="confirm-table__item-input" type="text" name="content" value="{{ $contact['content'] }}" readonly>
                         </td>
                     </tr>
                 </table>
