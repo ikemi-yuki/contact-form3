@@ -31,7 +31,7 @@
                     <span class="form__label--required">必須</span>
                 </div>
                 <div class="form__group-content">
-                    <input class="form__input" type="mail" name="email" placeholder="test@example.com" value="{{ old('email') }}">
+                    <input class="form__input" type="email" name="email" placeholder="test@example.com" value="{{ old('email') }}">
                     <div class="form__error">
                     @error('email')
                         {{ $message }}

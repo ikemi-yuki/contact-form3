@@ -8,9 +8,32 @@
     margin: 0 auto;
 }
 
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .header__logo {
     color: #fff;
     text-decoration: none;
     font-size: 24px;
     font-weight: bold;
+}
+
+.header-content nav {
+    width: 18%;
+}
+
+.header-nav__link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.header-nav__button {
+    border: none;
+    background: transparent;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
 }
